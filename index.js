@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-app.post('/api/calculate-area', (req, res) => {
+app.post('/calculate-area', (req, res) => {
     const { radius } = req.body;
   
     console.log(radius);
